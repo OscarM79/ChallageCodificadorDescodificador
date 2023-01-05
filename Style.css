@@ -1,0 +1,353 @@
+body {
+
+    background: #F3F5FC;
+
+}
+
+header .logo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 2em;
+    height: 3em;
+    left: 5.83%;
+    top: 3.84%;
+
+}
+
+.texto {
+
+    position: absolute;
+    width: 45%;
+    height: 55%;
+    left: 10%;
+    top: 12%;
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    line-height: 150%;
+    color: #0A3871;
+    resize: none;
+    outline: none;
+
+}
+
+.texto::placeholder {
+
+    color: #0A3871;
+    border: none;
+
+}
+
+.mensaje .leyenda {
+
+    position: absolute;
+    align-items: center;
+    padding: 0px;
+    width: 45%;
+    left: 10%;
+    top: 73%;
+    font-size: 0.75em;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+
+}
+
+.leyenda.active {
+
+    font-size: 1em;
+    color: #dc143c;
+    top: 70%;
+    transition: all 0.75s ease;
+
+}
+
+.botones {
+
+    display: flex;
+    padding: 0px;
+    gap: 5%;
+    position: absolute;
+    width: 45%;
+    height: 8%;
+    left: 10%;
+    top: 76%;
+
+}
+
+.encriptar {
+
+    display: flex;
+    width: 47.5%;
+    height: 100%;
+    background: #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.desencriptar {
+
+    box-sizing: border-box;
+    display: flex;
+    width: 47.5%;
+    height: 100%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    color: #0A3871;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.mensaje-mostrado {
+
+    position: absolute;
+    width: 30%;
+    height: 82%;
+    left: 60%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+.mensaje-mostrado .muñeco {
+
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    left: 5%;
+    top: 27%;
+
+}
+
+.cuadro-espera {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 90%;
+    height: 25%;
+    left: 5%;
+    top: 60%;
+
+}
+
+.cuadro-espera .msj-espera {
+
+    display: flex;
+    width: 100%;
+    height: 2em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+
+}
+
+.cuadro-espera .mensaje {
+
+    display: flex;
+    width: 90%;
+    height: 2em;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+
+}
+
+.msj_encriptado {
+
+    position: absolute;
+    display: none;
+    width: 90%;
+    height: 72%;
+    left: 5%;
+    top: .5em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #343A40;
+    resize: none;
+    outline: none;
+    border: none;
+
+}
+
+.btn-copiar {
+
+    display: none;
+    gap: 8px;
+    position: absolute;
+    width: 90%;
+    height: 8%;
+    left: 5%;
+    top: 87%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 1em;
+    justify-content: center;
+    cursor: pointer;
+    color: #0A3871;
+
+}
+
+.tooltip {
+
+    position: absolute;
+    opacity: 0;
+    top: 95%;
+    left: 10%;
+    background-color: #1ab394;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: all 0.75s ease;
+    width: 80%;
+
+}
+
+.tooltip.active {
+
+    opacity: 1;
+
+}
+
+footer {
+
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    gap: 5%;
+    top: 93%;
+    background: linear-gradient( #F3F5FC 15%, rgba(170, 21, 170, 0.765)) ;
+
+}
+
+footer ul {
+
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+footer ul li {
+
+    display: inline-block;
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+footer ul li img {
+
+    display: flex;
+    width: 1.2em;
+    height: 1.2em;
+
+}
+
+/*Responsive*/
+@media screen and (max-width: 700px) {
+    .texto {
+
+        width: 90%;
+        height: 35%;
+        left: 5%;
+        top: 10%;
+
+    }
+
+    .mensaje .leyenda {
+
+        left: 5%;
+        top: 48%;
+        width: 90%;
+
+    }
+
+    .leyenda.active {
+
+        top: 45%;
+
+    }
+
+    .botones {
+
+        width: 90%;
+        left: 5%;
+        top: 51%;
+
+    }
+
+    .mensaje-mostrado {
+
+        width: 90%;
+        height: 25%;
+        left: 5%;
+        top: 65%;
+
+    }
+
+    .mensaje-mostrado .muñeco {
+
+        display: none;
+
+    }
+
+    .cuadro-espera {
+
+        top: 5%;
+        height: 70%;
+
+    }
+
+    .btn-copiar {
+
+        height: 20%;
+        top: 77%;
+
+    }
+
+    .tooltip {
+
+        left: 0;
+        font-size: 0.75em;
+        width: 85%;
+        top: 92%;
+
+    }
+}
